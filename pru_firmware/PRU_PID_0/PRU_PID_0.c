@@ -120,7 +120,7 @@ void main(void) {
 		share_buff.pid[0].input = get_enc_rpm1();
 		share_buff.pid[1].input = get_enc_rpm2();
 		
-		// Comrprueba control automático para realizar el control.
+		// Comprueba control automático para realizar el control.
 		if (share_buff.control == 1) {
 			
 			// Actualiza PID.
