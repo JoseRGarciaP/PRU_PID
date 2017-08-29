@@ -146,7 +146,7 @@ void main(void) {
 			if (share_buff.cycles.sumX2 < 3e+38)            // Evita el desbordamiento del dato sumX2 (float), ocurrirá antes que el de sumX.
 			{
 				share_buff.cycles.sumX2 += cycles * cycles;
-				share_buff.cycles.var = share_buff.cycles.sumX2 / share_buff.cycles.loops - share_buff.cycles.med * (float)share_buff.cycles.med;
+				share_buff.cycles.var = (share_buff.cycles.sumX2 / share_buff.cycles.loops) - ((float)share_buff.cycles.med * share_buff.cycles.med);
 			}
 			
 		}
